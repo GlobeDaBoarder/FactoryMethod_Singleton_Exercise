@@ -2,6 +2,8 @@ package at.fhj.swd;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class FactoryImplSingletonTest extends AbstractFactoryImplTest {
     @Override
     protected Factory getFactory() {
@@ -15,7 +17,7 @@ public class FactoryImplSingletonTest extends AbstractFactoryImplTest {
         // just check out the singleton variants we have elaborated for more details.
 
         // implement meaningful code to return a factory instance
-        return FactorySingletonImpl.INSTANCE;
+        return FactorySingletonImpl.getInstance();
     }
 
     @Test

@@ -2,6 +2,8 @@ package at.fhj.swd;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class FactoryImplTest extends AbstractFactoryImplTest {
     @Override
     protected Factory getFactory() {
